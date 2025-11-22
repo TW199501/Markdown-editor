@@ -34,11 +34,19 @@ const config: StorybookConfig = {
         const baseUrl = resolve(__dirname, '..', tsConfig.compilerOptions.baseUrl);
         const paths = tsConfig.compilerOptions.paths;
 
-        for (const alias in paths) {
-            config.resolve.alias[alias] = resolve(baseUrl, paths[alias][0])
+        const aliasConfig = (config.resolve.alias || {}) as Record<
+            string,
+            string | false | string[]
+        >;
+
+        for (const aliasKey in paths) {
+            const key = aliasKey as keyof typeof paths;
+            aliasConfig[aliasKey] = resolve(baseUrl, paths[key][0]);
         }
 
-        config.resolve.alias['demo/*'] = resolve(__dirname, '..', 'demo/*');
+        aliasConfig['demo/*'] = resolve(__dirname, '..', 'demo/*');
+
+        config.resolve.alias = aliasConfig;
 
         return config;
     },
