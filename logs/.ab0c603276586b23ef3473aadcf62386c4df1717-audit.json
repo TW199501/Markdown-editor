@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "d:\\app\\markdown-editor\\logs\\.ab0c603276586b23ef3473aadcf62386c4df1717-audit.json",
+    "files": [
+        {
+            "date": 1763792669432,
+            "name": "d:\\app\\markdown-editor\\logs\\mcp-puppeteer-2025-11-22.log",
+            "hash": "c19a955e53086c8f9e1367df6c79ed3b8b04ed4ab7cf0390b50f326c538c9afe"
+        }
+    ],
+    "hashType": "sha256"
+}
