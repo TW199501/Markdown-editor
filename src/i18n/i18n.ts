@@ -18,10 +18,13 @@ subscribeConfigure((config) => {
 export {i18n};
 export function registerKeyset<K extends string, D extends KeysData>(
     keyset: K,
-    data: Record<'en' | 'ru', D>,
+    data: Record<'en' | 'ru', D> & Partial<Record<'zh-TW', D>>,
 ) {
     i18n.registerKeyset(Lang.En, keyset, data.en);
     i18n.registerKeyset(Lang.Ru, keyset, data.ru);
+    if (data['zh-TW']) {
+        i18n.registerKeyset(Lang.ZhTw, keyset, data['zh-TW']);
+    }
 
     return (i18n as unknown as I18NFn<Record<K, D>>).keyset(keyset);
 }

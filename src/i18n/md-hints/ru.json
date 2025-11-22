@@ -3,7 +3,7 @@
   "header_hint": "# Ваш текст",
   "italic_title": "Курсивный",
   "italic_hint": "_Ваш текст_",
-  "bold_title": "Жирный",
+  "bold_title": "",
   "bold_hint": "**Ваш текст**",
   "strikethrough_title": "Зачеркнутый",
   "strikethrough_hint": "~~Ваш текст~~",

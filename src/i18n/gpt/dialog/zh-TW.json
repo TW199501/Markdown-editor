@@ -1,0 +1,16 @@
+{
+  "answer-title": "你想如何處理這個回覆？",
+  "close-button": "關閉",
+  "dislike": "不佳的回覆",
+  "error": "發生錯誤",
+  "feedback-message": "感謝你的回饋！",
+  "fresh-start-button": "重新開始",
+  "like": "不錯的回覆",
+  "more": "更多",
+  "only-presets-title": "文字協助",
+  "refetch": "再試一次",
+  "replace": "取代所選文字",
+  "replace-disabled": "插入文字",
+  "try-again": "再試一次",
+  "alert-gpt-presets-info": "選取文字即可查看 GPT 預設動作"
+}

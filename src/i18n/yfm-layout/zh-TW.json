@@ -1,0 +1,15 @@
+{
+  "action.template.1": "兩個儲存格",
+  "action.template.2": "右側大儲存格",
+  "action.template.3": "左側大儲存格",
+  "action.template.4": "三個儲存格",
+  "action.align.left": "左對齊",
+  "action.align.center": "置中對齊",
+  "action.align.right": "右對齊",
+  "action.align.stretch": "延伸至全寬",
+  "action.remove": "移除",
+  "cell.preview": "預覽",
+  "cell.width": "寬度",
+  "cell.width.auto": "自動",
+  "cell.remove": "移除儲存格"
+}

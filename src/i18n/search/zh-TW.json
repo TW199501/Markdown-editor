@@ -1,0 +1,8 @@
+{
+  "label_case-sensitive": "區分大小寫",
+  "label_whole-word": "全字匹配",
+  "title": "在程式碼中搜尋",
+  "action_replace": "取代",
+  "action_replace_all": "全部取代",
+  "replace_placeholder": "取代文字"
+}

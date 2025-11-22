@@ -52,9 +52,11 @@
   - `"name": "@your-scope/markdown-editor"`。
 - 你自己跑 `npm publish`（公開 / 私有 registry 都可以）。
 - 你自己的專案就改成：
+
   ```bash
   npm install @your-scope/markdown-editor
   ```
+
 - 好處：不必等官方發版。
 - 代價：之後要自己維護升級，跟 upstream 差異要自己管理。
 
@@ -210,15 +212,21 @@ npm start
 
 ## i18n（國際化）
 
-要設定編輯器本身的語系，只需要呼叫 `configure`：
+要設定編輯器本身的語系，只需要呼叫 `configure`，並傳入對應的語言代碼：
 
 ```typescript
 import {configure} from '@gravity-ui/markdown-editor';
 
 configure({
-  lang: 'ru',
+  lang: 'zh-TW',
 });
 ```
+
+目前在這個專案中，語系值的典型用法為：
+
+- `en`：預設語言（英文）。
+- `ru`：俄文（官方 README 中的範例）。
+- `zh-TW`：繁體中文（本地 repo 已補上的語系，未必已在官方 npm 版本中釋出）。
 
 別忘了也要依照 [UIKit 的 i18n 說明](https://github.com/gravity-ui/uikit?tab=readme-ov-file#i18n) 以及其他 UI 套件的文件，在你的應用程式中設定它們各自的 `configure()` 或等價的國際化初始化邏輯。
 

@@ -1,0 +1,17 @@
+{
+  "doc_empty": "輸入文字，或輸入「/」開啟指令列表",
+  "doc_empty_mobile": "輸入文字",
+  "checkbox": "新增任務或檢查點描述",
+  "codeblock": "在區塊中加入程式碼或文字",
+  "deflist_term": "定義術語",
+  "deflist_desc": "定義說明",
+  "heading": "標題",
+  "cut_title": "摺疊標題",
+  "cut_content": "新增點擊後顯示的文字",
+  "note_title": "備註標題",
+  "note_content": "備註內容",
+  "block": "帶有裝飾的區塊",
+  "layout_cell": "文字",
+  "table_cell": "儲存格內容",
+  "select_filter": "搜尋"
+}

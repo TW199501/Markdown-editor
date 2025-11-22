@@ -1,0 +1,9 @@
+{
+  "align": "對齊方式",
+  "width": "寬度 (px)",
+  "padding": "內邊距",
+  "border": "邊框類型",
+  "border-size": "邊框大小",
+  "border-color": "邊框顏色",
+  "remove": "Remove block"
+}

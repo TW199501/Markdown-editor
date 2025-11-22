@@ -1,6 +1,7 @@
 export enum Lang {
     Ru = 'ru',
     En = 'en',
+    ZhTw = 'zh-TW',
 }
 
 interface Config {

@@ -1,0 +1,21 @@
+{
+  "column.add.before": "在前面新增欄位",
+  "column.add.after": "在後面新增欄位",
+  "column.remove": "刪除欄位",
+  "column.remove.multiple": "刪除多欄",
+  "row.add.before": "在前面新增列",
+  "row.add.after": "在後面新增列",
+  "row.remove": "刪除列",
+  "row.remove.multiple": "刪除多列",
+  "cells.clear": "清除儲存格",
+  "table.remove": "刪除表格",
+  "table.menu.cell.align.left": "將單元格內容靠左對齊",
+  "table.menu.cell.align.right": "將單元格內容靠右對齊",
+  "table.menu.cell.align.center": "將單元格內容置中對齊",
+  "table.menu.row.add": "在後面新增列",
+  "table.menu.row.remove": "刪除列",
+  "table.menu.column.add": "在後面新增欄位",
+  "table.menu.column.remove": "刪除欄位",
+  "table.menu.convert.yfm": "轉換為 YFM 表格",
+  "table.menu.table.remove": "刪除表格"
+}

@@ -48,7 +48,11 @@ export const SubSup: StoryObj<typeof component> = {
 };
 
 export const Emojis: StoryObj<typeof component> = {
-    args: {initial: markup.emojis},
+    args: {
+        initial: markup.emojis,
+        initialEditor: 'markup',
+        allowHTML: true,
+    },
 };
 
 export const DefinitionList: StoryObj<typeof component> = {
