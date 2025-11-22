@@ -1,10 +1,11 @@
-##### Develop / Extension creation
+# Develop / Extension creation
 
 ## How to Create Extension
 
 Let us examine the process of creating an extension based on the Mermaid extension, which enables the insertion and manipulation of Mermaid diagrams.
 
 ### WYSIWYG and Markup Modes
+
 The initial point of focus is the fact that the editor operates in two distinct modes: WYSIWYG (What You See Is What You Get) and markup. The extension of the editor refers to the enhancement of the WYSIWYG functionality. In markup mode, the editor executes the standard conversion of either markdown markup or advanced markdown markup ([YFM](https://diplodoc.com/docs/en/syntax/), for example), depending on the integrated plugins. In the markup mode, we can verify that the plugin functions properly, and that the syntax inputted into the editor is accurately reflected in the preview. It is crucial at this stage to ensure that the markup translates correctly into HTML code.
 
 In our example with the `mermaid` plugin, the code for the markup mode [can be found](https://github.com/gravity-ui/markdown-editor/blob/main/demo/md-plugins.ts#L52) in the `demo/mdplugins.ts` file.
@@ -18,7 +19,6 @@ In our example with the `mermaid` plugin, the code for the markup mode [can be f
 The specification should include the fields `fromMd`, `toMd`, and `spec`.
 
 You can also add a `view` field, for example, if rendering through React is required.
-
 
 ```ts
 const MermaidSpecsExtension: ExtensionAuto<MermaidSpecsOptions> = (builder, {nodeView}) => {
@@ -79,5 +79,3 @@ See the [full example of the extension](https://github.com/gravity-ui/markdown-e
 #### 3. Add Plugins
 
 The extension can be enhanced with [plugins](https://prosemirror.net/docs/guide/#state.plugins) as needed. Check out the [YfmTable extension](https://github.com/gravity-ui/markdown-editor/tree/main/src/extensions/yfm/YfmTable/plugins/YfmTableControls) example, where plugins add a panel (a pop-up window) for working with columns and rows.
-
-

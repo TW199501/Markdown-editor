@@ -1,13 +1,15 @@
-##### Getting started / Create react app
+# Getting started / Create react app
 
 ## Installation Guide
 
 ### 1. Setting Up the Environment for the React Application
+
 First, set up the environment for React. In this example, we will use Create React App:
 
 ```bash
 npx create-react-app markdown-editor --template gravity-ui-pure && cd markdown-editor
 ```
+
 Ensure that the `typescript` version in `devDependencies` matches the version specified in `overrides` in `package.json`. If there is a mismatch, update it by running:
 
 ```bash
@@ -15,6 +17,7 @@ npm install typescript@<version_from_overrides> --save-dev
 ```
 
 ### 2. Installing the Markdown editor
+
 Install the Markdown editor
 
 ```bash
@@ -22,7 +25,9 @@ npm install @gravity-ui/markdown-editor
 ```
 
 ### 3. Install peer dependencies
+
 Ensure that you have the necessary dependencies listed in [peerDependencies](https://github.com/gravity-ui/markdown-editor/blob/main/package.json) and install it. Include the following packages:
+
 - `@diplodoc/transform`
 - `highlight.js`
 - `katex`
@@ -30,6 +35,7 @@ Ensure that you have the necessary dependencies listed in [peerDependencies](htt
 - `markdown-it`
 
 ### 4. Configuring the application
+
 Add the `Editor.tsx`:
 
 ```tsx
@@ -93,6 +99,7 @@ export default App;
 ````
 
 ### 5. Configuring Webpack
+
 To prevent errors related to missing polyfills for Node.js core modules in Webpack 5, such as:
 
 - `Can't resolve 'process'`
@@ -109,6 +116,7 @@ We recommend using CRACO to apply these configurations.
 ```bash
 npm install @craco/craco
 ```
+
 2. Create a file called `craco.config.js` in the root of the project and add the following configuration:
 
 ```javascript
@@ -126,6 +134,7 @@ module.exports = {
   },
 };
 ```
+
 3. Update `package.json` to use CRACO for scripts:
 
 ```json
@@ -138,6 +147,7 @@ module.exports = {
   }
 }
 ```
+
 This setup ensures that your project is compatible with Webpack 5 and prevents missing module errors.
 
 6. After these changes, start the development server:
@@ -145,6 +155,3 @@ This setup ensures that your project is compatible with Webpack 5 and prevents m
 ```bash
 npm start
 ```
-
-
-

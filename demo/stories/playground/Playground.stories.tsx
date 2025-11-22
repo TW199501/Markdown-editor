@@ -8,6 +8,7 @@ export const Story: StoryObj<typeof component> = {
     args: {
         mobile: false,
         disableMarkdownItAttrs: true,
+        initialEditor: 'markup',
     },
 };
 Story.storyName = 'Playground';

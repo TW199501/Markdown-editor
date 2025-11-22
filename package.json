@@ -187,6 +187,7 @@
     "@diplodoc/utils": "^2.1.0",
     "@gravity-ui/i18n": "^1.7.0",
     "@gravity-ui/icons": "^2.12.0",
+    "@gravity-ui/markdown-editor": "15.25.0",
     "@lezer/highlight": "^1.2.1",
     "@lezer/markdown": "^1.4.0",
     "@types/is-number": "^7.0.1",

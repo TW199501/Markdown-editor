@@ -3,6 +3,10 @@ import type {StoryObj} from '@storybook/react';
 import {CustomCSSVariablesDemo as component} from './CSSVariables';
 
 export const Story: StoryObj<typeof component> = {
+    args: {
+        '--g-md-toolbar-padding': ""
+    },
+
     argTypes: {
         '--g-md-toolbar-padding': {
             control: {type: 'text'},
@@ -28,7 +32,7 @@ export const Story: StoryObj<typeof component> = {
             control: {type: 'text'},
             description: 'Editor contents padding',
         },
-    },
+    }
 };
 Story.storyName = 'Custom CSS Variables';
 

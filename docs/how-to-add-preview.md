@@ -1,4 +1,4 @@
-##### Getting started / Preview
+# Getting started / Preview
 
 ## How to Add Preview for Markup Mode
 
@@ -47,6 +47,7 @@ const render = useMemo(
     );
 };
 ```
+
 ### Pass additional properties to useMarkdownEditor
 
 ```ts

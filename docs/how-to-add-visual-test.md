@@ -1,8 +1,9 @@
-##### Develop / Visual Tests
+# Develop / Visual Tests
 
-# Visual Testing with Playwright
+## Visual Testing with Playwright
 
 ## Description
+
 Visual testing is performed by comparing reference and generated screenshots. Screenshots are taken using `@playwright/test` and `@playwright/experimental-ct-react`.
 
 ## Running Tests
@@ -20,10 +21,10 @@ npm run playwright:docker:update        # Update screenshots in Docker
 npm run playwright:docker:clear         # Clear cache in Docker
 npm run playwright:docker:report        # Display test results report in Docker
 ```
+
 Tests use the configuration file `playwright.config.ts`. The build is handled by Vite, available in `@playwright/experimental-ct-react`. The Vite configuration is specified in `ctViteConfig` in `playwright.config.ts`. To stabilize tests, `mountFixture` and `expectScreenshotFixture` are also used.
 
 See more: [Playwright Test Components](https://playwright.dev/docs/test-components)
-
 
 ## Running Tests Locally
 
@@ -84,10 +85,11 @@ Creating tests occurs on a local machine, but using commands with the `:docker` 
 See more: [Command line](https://playwright.dev/docs/test-cli)
 
 5. The generated screenshots will be saved in `__snapshots__`. After that, verify:
-  * Consistency with Storybook;
-  * Correct font rendering;
-  * Image and icon loading;
-  * Compliance with expected results.
+
+* Consistency with Storybook;
+* Correct font rendering;
+* Image and icon loading;
+* Compliance with expected results.
 
 6. Test reports (in Docker) can be viewed using the following command:
 
@@ -98,15 +100,18 @@ See more: [Command line](https://playwright.dev/docs/test-cli)
 ## Writing Complex Tests
 
 ### Editor helpers
+
 The core also includes helper functions designed to simplify UI interactions, testing, and debugging. These allow you to quickly switch editor modes, paste and clear text, visually highlight elements, and inspect their HTML markup during development.
 
 See:
+
   ```
   tests/playwright/core/editor.ts
   tests/playwright/core/helpers.ts
   ```
 
 ### Locator Best Practices
+
 When writing tests targeting the editor’s view layer and plugins in the WYSIWYG mode, follow these guidelines for reliable locator usage:
 
 1. Use `editor.fill`, `editor.press`, or `editor.pressSequentially` to emulate user input within the `contenteditable` region.
@@ -121,13 +126,13 @@ Playwright clipboard support varies across browsers. Keep this in mind when writ
 
 Playwright provides three main ways to perform clicks:
 
-- `locator.click()`
-- `element.dispatchEvent('click', params)`
-- `page.mouse.click(x, y)`
+* `locator.click()`
+* `element.dispatchEvent('click', params)`
+* `page.mouse.click(x, y)`
 
 Choose the method based on your code specifics. For events involving bubbling, consider using `dispatchEvent` with `{ bubbles: true }`.
 
 ## Useful Links
 
-- [Playwright API](https://playwright.dev/docs/api/class-test)
-- [Writing Playwright Tests](https://playwright.dev/docs/writing-tests)
+* [Playwright API](https://playwright.dev/docs/api/class-test)
+* [Writing Playwright Tests](https://playwright.dev/docs/writing-tests)
